@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name    = "viewport" content   = "width=device-width, initial-scale=1.0">
+    <link rel     = "shortcut icon" href = "Images/fgsfds-icon.ico" type = "image/x-icon">
+
+    <link rel = "stylesheet" href = "csss/style_cad.css">
+    <link rel="stylesheet" href="csss/style_scripts.css">
+    <title>Sobre - Inclusão Digital</title>
+</head>
+
+<body>
+    <header class = "header">
+    <div    class = "header-content">
+            <!-- Logo e Título -->
+            <div class = "logo-titulo">
+            <a   href  = "index.html">
+            <img src   = "Images/settings_accessibility.png" alt = "Logotipo do site Inclusão Digital" class = "logo">
+                </a>
+                <a href = "index.html" class = "site-title" target = "_self">
+                    <h1>Inclusão Digital</h1>
+                </a>
+            </div>
+
+            <!-- Botões de Acessibilidade -->
+            <div class="accessibility-buttons">
+                <button id="increase-font">A+</button>
+                <button id="decrease-font">A-</button>
+                <button id="toggle-contrast">Alto Contraste</button>
+            </div>
+
+            <!-- Navegação -->
+            <nav class = "menu">
+                <ul>
+                    <li><a href = "sobre.html" aria-label    = "Sobre nós" target = "_self" rel = "next">Sobre</a></li>
+                    <li><a href = "#servicos" aria-label     = "Serviços">Serviços</a></li>
+                    <li><a href = "cadastro.html" aria-label = "Cadastro" target  = "_self" rel = "next">Cadastro</a></li>
+                    <li><a href = "acess.html" aria-label    = "Acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id = "cadastro">
+    <h2      id = "titulo-cadastro">Cadastro de Usuário</h2>
+        <p>Preencha o formulário abaixo para criar sua conta e ter acesso aos nossos seviços. Todos os campos marcados
+            com * são obrigatorios.</p>
+        <form action = "#/subit-cadastro" method = "post"> <!--**-->
+
+            <label for  = "nome">Nome Compleo*</label>
+            <input type = "text" id         = "nome" name = "nome" required aria-required = "true" aria-describedby = "nome-desc">
+            <span  id   = "nome-desc" class = "field-intructions">Digite seu nome completo.</span>
+
+            <label for  = "email">Email*</label>
+            <input type = "email" id         = "email" name = "email" required aria-required = "true" aria-describedby = "email-desc">
+            <span  id   = "email-desc" class = "field-intructions">Digite um email válido.</span>
+
+            <label for  = "telefone">Telefone</label>
+            <input type = "tel" id              = "telefone" name = "telefone" aria-describedby = "telefone-desc">
+            <span  id   = "telefone-desc" class = "field-intructions">Opcional. Insira seu número de telefone</span>
+
+            <label for  = "senha">Senha*</label>
+            <input type = "password" id = "senha" name = "senha" required aria-required = "true" aria-describedby = "senha-desc">
+            <span>A senha deve conter pelo menos 8 caracteres.</span>
+            <br>
+            <button type = "submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <aside id="botoes-acesso">
+        <img id="contrast-img" src="Images/contrast.png" alt="Alto Contraste">
+        <img id="text-increase-img" src="Images/text_increase.png" alt="Aumentar Texto">
+        <img id="text-decrease-img" src="Images/text_decrease.png" alt="Reduzir Texto">
+    </aside>
+
+    <footer id          = "rodape" aria-labelledby = "titulo-rodape">
+    <h2     id          = "titulo-rodape" class    = "sr-only">Informações do Rodapé</h2>
+    <nav    aria-label  = "links rápidos">
+    <ul     class       = "footer-links">
+    <li>|<a href        = "index.html">Início</a>|</li>
+    <li>|<a href        = "sobre.html">Sobre-nós</a>|</li>
+    <li>|<a href        = "cadastro.html">Cadastro</a>|</li>
+    <li>|<a href        = "acess.html">Acessibilidade</a>|</li>
+    <!--    <li><a href = "#contato">Contato</a></li> -->
+            </ul>
+        </nav>
+        <p class = "copyright">&copy; 2024 InclusãoSite. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>

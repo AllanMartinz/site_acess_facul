@@ -1,0 +1,447 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Estilos Gerais */
+h1, h2{
+    font-family:"Oswald", serif;
+}
+body {
+    font-family: "Raleway", serif;
+    margin: 0;
+    padding: 0;
+    color: #0d0628;
+    background-color: #fff4f1;
+}
+/*------------------------------------HEADER-------------------------------------*/
+/* Header */
+.header {
+    background-color: #fff4f1;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff4f1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo e Título */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.site-title {
+    font-size: 15px;
+    color: #0e606b;
+    text-decoration: none;
+}
+
+/* Botões de Acessibilidade */
+.accessibility-buttons button {
+    font-size: 15px;
+    padding: 11px 12px;
+    margin-left: 5px;
+    background-color: #0e606b;
+    color: #fff4f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.accessibility-buttons button:hover {
+    background-color: #1697a6;
+    color: #0d0628;
+}
+
+/* Menu de Navegação */
+.menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0e606b;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffc24b;
+}
+/*-------------------------------------------------------------------------------*/
+
+/* Footer */
+#rodape {
+    background-color: #fff4f1;
+    padding: 20px 0;
+    border-top: 2px solid #fff4f1;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+.footer-links li{
+    color: #0e606b;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #0e606b;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #ffc24b;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.copyright {
+    color: #0e606b;
+    font-size: 0.9rem;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+
+/* Estilo geral para o conteúdo principal */
+main {
+
+max-width: 1200px;
+
+margin: 0 auto;
+
+flex: 1; /* Ocupará o máximo de espaço possível */
+
+padding: 20px;
+
+background-color: #1698a644;
+
+border: 1px solid #1698a644;
+
+border-radius: 8px;
+}
+
+/* Seção de introdução */
+#introducao {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#titulo-introducao {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0d0628;
+}
+
+#introducao p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #0d0628;
+}
+
+/* Link de acessibilidade */
+#introducao a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#introducao a:hover {
+    text-decoration: underline;
+    color: #ffc24b;
+}
+
+/* Seção de cadastro */
+#cadastro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#titulo-cadastro {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #0d0628;
+}
+
+#cadastro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #0d0628;
+}
+
+/* Formulário de cadastro */
+form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #0d0628;
+    border-radius: 5px;
+}
+
+.field-intructions {
+    font-size: 0.9rem;
+    color: #0d0628;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff4f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #ffc24b;
+}
+
+/* Seção de redes sociais */
+#redes {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#redes h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #0d0628;
+}
+
+#redes p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#redes ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#redes li {
+    margin: 5px 0;
+}
+
+#redes a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#redes a:hover {
+    text-decoration: underline;
+    color: #ffc24b;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espaçamento entre o main e o aside */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+}
+/* Estilo geral para o aside */
+aside {
+    
+margin-left: 20px;
+    
+float: right;
+    
+width: 300px; /* Largura fixa para o aside */
+    
+background-color: #1698a644;
+    
+border: 1px solid #1698a644;
+    
+border-radius: 8px;
+    
+padding: 10px 30px 10px 19px;
+}
+
+/* Seção Feedbacks */
+#feedback {
+    margin-bottom: 63px;
+}
+
+#titulo-feedback {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #0d0628;
+}
+
+.feedback-form h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0e606b;
+}
+
+.feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #0e606b;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.feedback-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff4f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.feedback-form button:hover {
+    background-color: #ffc24b;
+}
+
+/* Seção Informações e Notícias */
+#informacoes {
+    margin-top: 30px;
+}
+
+#titulo-informacoes {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+    border-top: 1px solid #0e606b;
+}
+
+
+#informacoes p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid #0e606b;
+}
+
+article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #0e606b;
+}
+
+article p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+article a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+    color: #ffc24b;
+}
+/*-------------------------------------------------------------------------------*/
+/* Estilização para o container dos botões de acesso */
+#botoes-acesso {
+    position: fixed;
+    top: 200px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os ícones no centro do contêiner */
+    width: 50px; /* Limita a largura para não ocupar muito espaço */
+    background-color: #0e606b; /* Fundo semi-transparente */
+    border-color: #0e606b;
+    padding: 10px;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+/* Estilos para os ícones dentro do aside */
+#botoes-acesso img {
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px;
+    margin-bottom: 10px; /* Espaço entre os botões */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#botoes-acesso img:hover {
+    transform: scale(1.1);
+}
+

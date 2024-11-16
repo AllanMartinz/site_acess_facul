@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name    = "viewport" content   = "width=device-width, initial-scale=1.0">
+    <link rel     = "shortcut icon" href = "Images/fgsfds-icon.ico" type = "image/x-icon">
+    <link rel     = "stylesheet" href    = "csss/style.css">
+    <link rel="stylesheet" href="csss/style_scripts.css">
+    <title>Inclusão Digital - Site Acessível</title>
+</head>
+
+<body>
+
+    <!--!NOTA: os itens que tiver com ** é melhor dar uma revisada-->
+
+    <header class = "header">
+    <div    class = "header-content">
+            <!-- Logo e Título -->
+            <div class = "logo-titulo">
+            <a   href  = "index.html">
+            <img src   = "Images/settings_accessibility.png" alt = "Logotipo do site Inclusão Digital" class = "logo">
+                </a>
+                <a href = "index.html" class = "site-title" target = "_self">
+                    <h1>Inclusão Digital</h1>
+                </a>
+            </div>
+
+            <!-- Botões de Acessibilidade -->
+            <div class="accessibility-buttons">
+                <button id="increase-font">A+</button>
+                <button id="decrease-font">A-</button>
+                <button id="toggle-contrast">Alto Contraste</button>
+            </div>
+
+            <!-- Navegação -->
+            <nav class = "menu">
+                <ul>
+                    <li><a href = "sobre.html" aria-label    = "Sobre nós" target = "_self" rel = "next">Sobre</a></li>
+                    <li><a href = "#servicos" aria-label     = "Serviços">Serviços</a></li>
+                    <li><a href = "cadastro.html" aria-label = "Cadastro" target  = "_self" rel = "next">Cadastro</a></li>
+                    <li><a href = "acess.html" aria-label    = "Acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class = "container">
+        <main>
+            <div>
+                <!--Introducao-->
+                <section id = "introducao">
+                <h1      id = "titulo-introducao">Bem-vindo(a) ao Site de Inclusão Digital</h1>
+                    <p>
+                        Nosso objetivo é promover a inclusão digital, oferecendo informações e recursos acessíveis para
+                        todos. Aqui, você econtrará conteúdo, ferramentas e serviços que facilitam o acesso ao mundo
+                        digital, idependente das suas necessidades ou habilidades. Queremos criar um ambiente onde todos
+                        posssam navegar com facilidade e se sentir acolhidos.
+                    </p>
+                    <p>
+                        <a href = "acess.html"> <!--**-->
+                            Saiba mais sobre as opções de acessibilidade
+                        </a>
+                        e descubra como personalizar sua experiência.
+                    </p>
+                </section>
+
+                <!--cadastro-->
+                <section id = "cadastro">
+                <h2      id = "titulo-cadastro">Cadastro de Usuário</h2>
+                    <p>Preencha o formulário abaixo para criar sua conta e ter acesso aos nossos seviços. Todos os
+                        campos marcados com * são obrigatorios.</p>
+                    <form action = "#/subit-cadastro" method = "post"> <!--**-->
+
+                        <label for              = "nome">Nome Compleo*</label>
+                        <input type             = "text" id         = "nome" name = "nome" required aria-required = "true"
+                               aria-describedby = "nome-desc">
+                        <span  id               = "nome-desc" class = "field-intructions">Digite seu nome completo.</span>
+
+                        <label for              = "email">Email*</label>
+                        <input type             = "email" id         = "email" name = "email" required aria-required = "true"
+                               aria-describedby = "email-desc">
+                        <span  id               = "email-desc" class = "field-intructions">Digite um email válido.</span>
+
+                        <label for  = "telefone">Telefone</label>
+                        <input type = "tel" id              = "telefone" name = "telefone" aria-describedby = "telefone-desc">
+                        <span  id   = "telefone-desc" class = "field-intructions">Opcional. Insira seu número de
+                            telefone</span>
+
+                        <label for              = "senha">Senha*</label>
+                        <input type             = "password" id = "senha" name = "senha" required aria-required = "true"
+                               aria-describedby = "senha-desc">
+                        <span>A senha deve conter pelo menos 8 caracteres.</span>
+
+                        <button type = "submit">Cadastrar</button>
+                    </form>
+                </section>
+                <!--Redes-Sociais-->
+                <section id = "redes">
+                    <h2>Cadastro/Login para redes-sociais</h2>
+                    <p>Clique nos nomes das redes-sociais para ser mandado a pagina de cadastro/login delas.</p>
+                    <ul>
+                        <li><a href = "https://www.instagram.com/" target             = "_blank" rel = "external">Instagram</a></li>
+                        <li><a href = "https://www.facebook.com/?locale=pt_BR" target = "_blank" rel = "external">Facebook</a>
+                        </li>
+                        <li><a href = "https://x.com/?logout=1731682048537" target = "_blank" rel = "external">X(twitter)</a>
+                        </li>
+                        <li><a href = "https://www.youtube.com/" target          = "_blank" rel = "external">Youtube</a></li>
+                        <li><a href = "https://web.whatsapp.com/" target         = "_blank" rel = "external">WhatsApp</a></li>
+                        <li><a href = "https://br.pinterest.com/" target         = "_blank" rel = "external">Pinterest</a></li>
+                        <li><a href = "https://www.linkedin.com/login/pt" target = "_blank" rel = "external">LinkedIn</a></li>
+                        <li><a href = "https://www.tiktok.com/pt-BR" target      = "_blank" rel = "external">TikTok</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <aside id="botoes-acesso">
+            <img id="contrast-img" src="Images/contrast.png" alt="Alto Contraste">
+            <img id="text-increase-img" src="Images/text_increase.png" alt="Aumentar Texto">
+            <img id="text-decrease-img" src="Images/text_decrease.png" alt="Reduzir Texto">
+        </aside>
+        <aside>
+            <div>
+                <!--Feedbacks-->
+                <section id = "feedback">
+                <h2      id = "titulo-feedback">Feedbacks</h2>
+                    <p>Seu feedback é fundamenta para melhorias continuamente. </p>
+                    <div class = "feedback-form">
+                        <h3>Deixe seu feedback</h3>
+                        <form     action = "#/sumit-feedback" method = "post"></form><!--**-->
+                        <label    for    = "nome">Nome:</label>
+                        <input    type   = "text" id                 = "nome" name       = "nome" required>
+                        <label    for    = "comentario">Comentário:</label>
+                        <textarea name   = "comentario" id           = "comentario" rows = "4"></textarea>
+                        <button   type   = "submit">Enviar Feedback</button>
+                    </div>
+                </section>
+                <!--Noticias--><!--**-->
+                <section id = "informacoes">
+                <h2      id = "titulo-informacoes">Informações</h2>
+                    <p>Mantenha-se informado sobre nossas atividades, eventos e atualizações importantes.</p>
+                    <article>
+                        <h3>Informativo 1</h3>
+                        <p>Breve descrição resumo das informaçoes. <br><a href = "#link1">Leia mais</a></p>
+                    </article>
+                    <article>
+                        <h3>Informativo 2</h3>
+                        <p>Breve descrição resumo das informaçoes. <br><a href = "#link2">Leia mais</a></p>
+                    </article>
+                    <article>
+                        <h3>Informativo 3</h3>
+                        <p>Breve descrição resumo das informaçoes. <br><a href = "#link3">Leia mais</a></p>
+                    </article>
+                </section>
+            </div>
+        </aside>
+
+    </div>
+    <footer id          = "rodape" aria-labelledby = "titulo-rodape">
+    <h2     id          = "titulo-rodape" class    = "sr-only">Informações do Rodapé</h2>
+    <nav    aria-label  = "links rápidos">
+    <ul     class       = "footer-links">
+    <li>|<a href        = "index.html">Início</a>|</li>
+    <li>|<a href        = "sobre.html">Sobre-nós</a>|</li>
+    <li>|<a href        = "cadastro.html">Cadastro</a>|</li>
+    <li>|<a href        = "acess.html">Acessibilidade</a>|</li>
+    <!--    <li><a href = "#contato">Contato</a></li> -->
+            </ul>
+        </nav>
+        <p class = "copyright">&copy; 2024 InclusãoSite. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>

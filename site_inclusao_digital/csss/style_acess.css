@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* Estilos gerais para a seção */
+section {
+    background-color: #f9f9f9; /* Fundo claro e suave */
+    border: 1px solid #f9f9f9; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem automática para centralizar */
+    width: 90%; /* Largura responsiva */
+    max-width: 800px; /* Largura máxima */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+}
+
+/* Títulos das seções */
+section h2 {
+    font-size: 1.8rem; /* Tamanho da fonte maior */
+    color: #0d0628; /* Cor escura e profissional */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centralizar os títulos */
+    font-weight: bold;
+}
+
+/* Parágrafos */
+section p {
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    color: #0d0628; /* Cor do texto neutra */
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    text-align: justify; /* Justificar o texto */
+}
+
+/* Listas */
+section ul {
+    list-style-type: disc; /* Estilo dos marcadores */
+    margin: 10px 0 20px 40px; /* Margem personalizada */
+    padding-left: 0; /* Remover padding */
+}
+
+section ul li {
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha para listas */
+    color: #0d0628; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+/* Texto em negrito dentro de listas */
+section ul li strong {
+    color: #007bff; /* Destaque com cor azul */
+    font-weight: bold;
+}
+
+/* Observação */
+section p em {
+    color: #ffc24b; /* Cor laranja para destaque */
+    font-style: italic; /* Itálico */
+}
+
+/* Botão de acessibilidade (opcional, se tiver um botão) */
+#botao-acessibilidade {
+    background-color: #007bff; /* Cor azul */
+    color: #fff4f1; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+#botao-acessibilidade:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+.aviso{
+    color: #ffc24b;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Modo de alto contraste */
+.high-contrast {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+}
+
+.high-contrast a {
+    color: #ffcc00; /* Links com cor amarela */
+}
+
+.high-contrast button {
+    background-color: #333; /* Botões com fundo escuro */
+    color: #ffcc00; /* Texto dos botões em amarelo */
+    border: 1px solid #ffcc00;
+}
+
+.high-contrast img {
+    filter: invert(1); /* Inverte as cores das imagens */
+}

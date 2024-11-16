@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name    = "viewport" content   = "width=device-width, initial-scale=1.0">
+    <link rel     = "shortcut icon" href = "Images/fgsfds-icon.ico" type = "image/x-icon">
+    <link rel     = "stylesheet" href    = "csss/style.css">
+    <link rel     = "stylesheet" href    = "csss/style_acess.css">
+    <link rel="stylesheet" href="csss/style_scripts.css">
+    <title>Inclusão Digital - Site Acessível</title>
+</head>
+
+<body>
+
+    <!--!NOTA: os itens que tiver com ** é melhor dar uma revisada-->
+
+    <header class = "header">
+    <div    class = "header-content">
+            <!-- Logo e Título -->
+            <div class = "logo-titulo">
+            <a   href  = "index.html">
+            <img src   = "Images/settings_accessibility.png" alt = "Logotipo do site Inclusão Digital" class = "logo">
+                </a>
+                <a href = "index.html" class = "site-title" target = "_self">
+                    <h1>Inclusão Digital</h1>
+                </a>
+            </div>
+
+            <!-- Botões de Acessibilidade -->
+            <div class="accessibility-buttons">
+                <button id="increase-font">A+</button>
+                <button id="decrease-font">A-</button>
+                <button id="toggle-contrast">Alto Contraste</button>
+            </div>
+
+            <!-- Navegação -->
+            <nav class = "menu">
+                <ul>
+                    <li><a href = "sobre.html" aria-label    = "Sobre nós" target = "_self" rel = "next">Sobre</a></li>
+                    <li><a href = "#servicos" aria-label     = "Serviços">Serviços</a></li>
+                    <li><a href = "cadastro.html" aria-label = "Cadastro" target  = "_self" rel = "next">Cadastro</a></li>
+                    <li><a href = "acess.html" aria-label    = "Acessibilidade">Acessibilidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="acessibilidade">
+
+        <h2>Por Que a Acessibilidade é Importante?</h2>
+        <p>
+            A acessibilidade digital é fundamental para garantir que pessoas com diferentes habilidades e necessidades
+            possam acessar e interagir com o conteúdo do nosso site de forma independente e eficaz.
+        </p>
+
+        <h2>Recursos de Acessibilidade</h2>
+        <ul>
+            <li><strong>Contraste de Cores: </strong> O site utiliza uma paleta de cores com contraste elevado para
+                facilitar a leitura de textos e identificação de elementos visuais.</li>
+            <li><strong>Navegação por Teclado: </strong> Todas as áreas do site podem ser acessadas e navegadas usando
+                apenas o teclado, para usuários com limitações motoras.</li>
+            <li><strong>Textos Alternativos: </strong> Todas as imagens incluem textos alternativos (alt text) para
+                garantir que leitores de tela possam descrever o conteúdo visual.</li>
+            <li><strong>Escalabilidade de Fontes: </strong> É possível aumentar o tamanho do texto para facilitar a
+                leitura, respeitando as configurações de acessibilidade do navegador.</li>
+            <!--
+                <li><strong>Compatibilidade com Leitores de Tela: </strong> O site é compatível com as principais ferramentas
+                de leitores de tela, para auxiliar usuários com deficiência visual.</li>
+            -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Atalhos de Navegação</h2>
+        <p>
+            Para facilitar o acesso a seções importantes do site, oferecemos os seguintes atalhos de navegação: 
+        </p>
+        <ul>
+            <li><strong>Tecla Alt + 1: </strong> Ir para o início da página <span class="aviso">(ainda nao disponivel)</span></li>
+            <li><strong>Tecla Alt + 2: </strong> Ir para a seção de acessibilidade <span class="aviso">(ainda nao disponivel)</span></li>
+            <li><strong>Tecla Alt + 3: </strong> Ir para o formulário de contato <span class="aviso">(ainda nao disponivel)</span></li>
+        </ul>
+        <p><em>Observação: </em> Em alguns navegadores, pode ser necessário combinar com a tecla Shift ou Control.</p>
+    </section>
+
+    <section>
+        <h2>Personalização de Experiência</h2>
+        <p>
+            Oferecemos opções de personalização para que os usuários ajustem o site às suas preferências. Essas opções
+            estão disponíveis no menu de acessibilidade: 
+        </p>
+        <ul>
+            <li>Ajuste de contraste</li>
+            <li>Aumento do tamanho da fonte</li>
+            <li>diminuição do tamanho da fonte</li>
+        </ul>
+        <p>Você pode acessar essas opções clicando no botão de acessibilidade localizado no canto direito da tela.</p>
+    </section>
+
+    <aside id="botoes-acesso">
+        <img id="contrast-img" src="Images/contrast.png" alt="Alto Contraste">
+        <img id="text-increase-img" src="Images/text_increase.png" alt="Aumentar Texto">
+        <img id="text-decrease-img" src="Images/text_decrease.png" alt="Reduzir Texto">
+    </aside>
+
+    <footer id          = "rodape" aria-labelledby = "titulo-rodape">
+    <h2     id          = "titulo-rodape" class    = "sr-only">Informações do Rodapé</h2>
+    <nav    aria-label  = "links rápidos">
+    <ul     class       = "footer-links">
+    <li>|<a href        = "index.html">Início</a>|</li>
+    <li>|<a href        = "sobre.html">Sobre-nós</a>|</li>
+    <li>|<a href        = "cadastro.html">Cadastro</a>|</li>
+    <li>|<a href        = "acess.html">Acessibilidade</a>|</li>
+    <!--    <li><a href = "#contato">Contato</a></li> -->
+            </ul>
+        </nav>
+        <p class = "copyright">&copy; 2024 InclusãoSite. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>

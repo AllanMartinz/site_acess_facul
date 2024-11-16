@@ -1,0 +1,235 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Estilos Gerais */
+h1, h2{
+    font-family:"Oswald", serif;
+}
+body {
+    font-family: "Raleway", serif;
+    margin: 0;
+    padding: 0;
+    color: #0d0628;
+    background-color: #fff4f1;
+}
+
+
+/*------------------------------------HEADER-------------------------------------*/
+/* Header */
+.header {
+    background-color: #fff4f1;
+    padding: 20px 0;
+    border-bottom: 2px solid #fff4f1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo e Título */
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.site-title {
+    font-size: 15px;
+    color: #0e606b;
+    text-decoration: none;
+}
+
+/* Botões de Acessibilidade */
+.accessibility-buttons button {
+    font-size: 15px;
+    padding: 11px 12px;
+    margin-left: 5px;
+    background-color: #0e606b;
+    color: #fff4f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.accessibility-buttons button:hover {
+    background-color: #1697a6;
+    color: #0d0628;
+}
+
+/* Menu de Navegação */
+.menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0e606b;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffc24b;
+}
+/*-------------------------------------------------------------------------------*/
+
+/* Footer */
+#rodape {
+    background-color: #fff4f1;
+    padding: 20px 0;
+    border-top: 2px solid #fff4f1;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+.footer-links li{
+    color: #0e606b;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #0e606b;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #ffc24b;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.copyright {
+    color: #0e606b;
+    font-size: 0.9rem;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Seção de Cadastro */
+#cadastro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px; /* Define uma largura máxima semelhante à da seção Sobre */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    text-align: center;
+}
+
+/* Título do Cadastro */
+#titulo-cadastro {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #0d0628;
+}
+
+/* Parágrafo do Cadastro */
+#cadastro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #0d0628;
+}
+
+/* Formulário de Cadastro */
+form label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left; /* Alinha os rótulos à esquerda para melhor usabilidade */
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Cor da borda ajustada para contraste */
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+}
+
+.field-intructions {
+    font-size: 0.9rem;
+    color: #0d0628;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left; /* Alinha as instruções à esquerda */
+}
+
+/* Botão de Envio */
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ffc24b;
+}
+
+#botoes-acesso {
+    position: fixed;
+    top: 200px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os ícones no centro do contêiner */
+    width: 50px; /* Limita a largura para não ocupar muito espaço */
+    background-color: #0e606b; /* Fundo semi-transparente */
+    border-color: #0e606b;
+    padding: 10px;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+/* Estilos para os ícones dentro do aside */
+#botoes-acesso img {
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px;
+    margin-bottom: 10px; /* Espaço entre os botões */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#botoes-acesso img:hover {
+    transform: scale(1.1);
+}
